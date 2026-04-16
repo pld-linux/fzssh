@@ -1,17 +1,17 @@
 Summary:	SSH/SFTP library based on libfilezilla
 Summary(pl.UTF-8):	Biblioteka SSH/SFTP bazująca na libfilezilla
 Name:		fzssh
-Version:	1.1.10
+Version:	1.2.0
 Release:	1
 License:	AGPLv3+
 Group:		Libraries
 #Source0-dl:	https://fzssh.filezilla-project.org/download.php
 Source0:	%{name}-%{version}.tar.xz
-# Source0-md5:	3e4f36a735d1868e5b2ed8cb742a6019
+# Source0-md5:	216310b4d9bc9ee8b272f4a57ef3076a
 URL:		https://fzssh.filezilla-project.org/
 BuildRequires:	gmp-devel >= 6.2
 BuildRequires:	libargon2-devel
-BuildRequires:	libfilezilla-devel >= 0.55.3
+BuildRequires:	libfilezilla-devel >= 0.55.4
 BuildRequires:	meson
 BuildRequires:	nettle-devel >= 3.10
 BuildRequires:	ninja
@@ -19,7 +19,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.583
 Requires:	gmp >= 6.2
 Requires:	libargon2
-Requires:	libfilezilla >= 0.55.3
+Requires:	libfilezilla >= 0.55.4
 Requires:	nettle >= 3.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
